@@ -1,0 +1,79 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: classsemble_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: classsemble
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-secure_password_change_me}
+      POSTGRES_DB: classsemble_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - classsemble_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U classsemble"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Nuxt 3 Application
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: classsemble_app
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://classsemble:${DB_PASSWORD:-secure_password_change_me}@postgres:5432/classsemble_db?schema=public
+      - LTI_KEYSET_URL=${LTI_KEYSET_URL}
+      - LTI_CLIENT_ID=${LTI_CLIENT_ID}
+      - LTI_DEPLOYMENT_ID=${LTI_DEPLOYMENT_ID}
+      - LTI_PRIVATE_KEY=${LTI_PRIVATE_KEY}
+      - JWT_SECRET=${JWT_SECRET}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID:-}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET:-}
+      - ZOOM_API_KEY=${ZOOM_API_KEY:-}
+      - ZOOM_API_SECRET=${ZOOM_API_SECRET:-}
+      - SOCKET_PORT=${SOCKET_PORT:-3001}
+    ports:
+      - "3000:3000"
+    networks:
+      - classsemble_network
+    command: sh -c "npx prisma migrate deploy && node .output/server/index.mjs"
+
+  # Redis (Optional - for session storage and caching)
+  # redis:
+  #   image: redis:7-alpine
+  #   container_name: classsemble_redis
+  #   restart: unless-stopped
+  #   ports:
+  #     - "6379:6379"
+  #   volumes:
+  #     - redis_data:/data
+  #   networks:
+  #     - classsemble_network
+  #   healthcheck:
+  #     test: ["CMD", "redis-cli", "ping"]
+  #     interval: 10s
+  #     timeout: 5s
+  #     retries: 5
+
+networks:
+  classsemble_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
+  # redis_data:
+  #   driver: local
