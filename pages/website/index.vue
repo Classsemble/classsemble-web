@@ -3,15 +3,15 @@
     <Navbar />
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-primary-50 via-white to-secondary-50 py-20 px-4">
+    <section class="bg-linen py-20 px-4">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div class="text-center lg:text-left">
-            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
+            <h1 class="text-5xl md:text-6xl font-bold text-teal mb-6 animate-fade-in">
               Collaborate, Schedule, and Connect
-              <span class="text-gradient">Inside Canvas</span>
+              <span class="text-coral">Inside Canvas</span>
             </h1>
-            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p class="text-xl text-ash mb-8 leading-relaxed">
               Empower your students with seamless collaboration tools integrated directly into Canvas LMS. 
               Schedule meetings, chat in real-time, and boost engagement—all in one place.
             </p>
@@ -38,31 +38,31 @@
       <div class="max-w-7xl mx-auto px-4">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
-            <div class="text-4xl font-bold text-primary-600 mb-2">10K+</div>
-            <div class="text-gray-600">Active Users</div>
+            <div class="text-4xl font-bold text-teal mb-2">10K+</div>
+            <div class="text-ash">Active Users</div>
           </div>
           <div>
-            <div class="text-4xl font-bold text-primary-600 mb-2">500+</div>
-            <div class="text-gray-600">Institutions</div>
+            <div class="text-4xl font-bold text-teal mb-2">500+</div>
+            <div class="text-ash">Institutions</div>
           </div>
           <div>
-            <div class="text-4xl font-bold text-primary-600 mb-2">50K+</div>
-            <div class="text-gray-600">Meetings Scheduled</div>
+            <div class="text-4xl font-bold text-teal mb-2">50K+</div>
+            <div class="text-ash">Meetings Scheduled</div>
           </div>
           <div>
-            <div class="text-4xl font-bold text-primary-600 mb-2">98%</div>
-            <div class="text-gray-600">Satisfaction Rate</div>
+            <div class="text-4xl font-bold text-teal mb-2">98%</div>
+            <div class="text-ash">Satisfaction Rate</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Features Preview -->
-    <section class="py-20 bg-gray-50 px-4">
+    <section class="py-20 bg-lemon px-4">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
-          <h2 class="section-heading">Everything You Need for Better Collaboration</h2>
-          <p class="section-subheading max-w-3xl mx-auto">
+          <h2 class="section-heading text-teal">Everything You Need for Better Collaboration</h2>
+          <p class="section-subheading max-w-3xl mx-auto text-ash">
             Classsemble brings powerful collaboration tools directly into your Canvas courses
           </p>
         </div>
@@ -94,17 +94,17 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-r from-primary-600 to-secondary-600 text-white px-4">
+    <section class="py-20 bg-teal text-white px-4">
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Canvas Experience?</h2>
         <p class="text-xl mb-8 opacity-90">
           Join thousands of educators and students already using Classsemble
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#" class="btn-primary bg-white text-primary-600 hover:bg-gray-100 text-lg px-8 py-4">
+          <a href="#" class="bg-white text-teal hover:bg-linen text-lg px-8 py-4 font-semibold rounded-lg transition-colors">
             Start Free Trial
           </a>
-          <NuxtLink to="/website/contact" class="btn-secondary border-white text-white hover:bg-white hover:text-primary-600 text-lg px-8 py-4">
+          <NuxtLink to="/website/contact" class="border-2 border-white text-white hover:bg-white hover:text-teal text-lg px-8 py-4 font-semibold rounded-lg transition-colors">
             Contact Sales
           </NuxtLink>
         </div>

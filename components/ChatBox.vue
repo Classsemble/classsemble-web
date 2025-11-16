@@ -1,7 +1,7 @@
 <template>
   <div class="chat-box flex flex-col h-full">
     <!-- Chat Header -->
-    <div class="chat-header bg-primary-600 text-white p-4 rounded-t-lg">
+    <div class="chat-header bg-teal text-white p-4 rounded-t-lg">
       <h3 class="text-lg font-semibold">{{ courseName || 'Course Chat' }}</h3>
       <p class="text-sm opacity-90">{{ onlineCount }} online</p>
     </div>
@@ -9,7 +9,7 @@
     <!-- Messages Container -->
     <div 
       ref="messagesContainer"
-      class="messages-container flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50"
+      class="messages-container flex-1 overflow-y-auto p-4 space-y-4 bg-linen"
     >
       <div
         v-for="message in messages"
@@ -21,8 +21,8 @@
             {{ getInitials(message.user.name) }}
           </div>
           <div class="flex-1">
-            <span class="font-semibold text-sm">{{ message.user.name }}</span>
-            <span class="text-xs text-gray-500 ml-2">{{ formatTime(message.timestamp) }}</span>
+            <span class="font-semibold text-sm text-teal">{{ message.user.name }}</span>
+            <span class="text-xs text-ash ml-2">{{ formatTime(message.timestamp) }}</span>
           </div>
         </div>
         <div class="message-content bg-white rounded-lg p-3 shadow-sm">
@@ -30,24 +30,24 @@
         </div>
       </div>
 
-      <div v-if="messages.length === 0" class="text-center text-gray-500 py-8">
+      <div v-if="messages.length === 0" class="text-center text-ash py-8">
         No messages yet. Start the conversation!
       </div>
     </div>
 
     <!-- Input Area -->
-    <div class="chat-input bg-white p-4 border-t rounded-b-lg">
+    <div class="chat-input bg-lemon p-4 border-t border-ash rounded-b-lg">
       <form @submit.prevent="sendMessage" class="flex gap-2">
         <input
           v-model="newMessage"
           type="text"
           placeholder="Type your message..."
-          class="input-field flex-1"
+          class="input-field flex-1 bg-white border-ash focus:border-teal focus:ring-teal"
           :disabled="sending"
         />
         <button
           type="submit"
-          class="btn-primary"
+          class="btn-primary bg-coral hover:bg-coral/90 text-white px-6 py-2 rounded-lg font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           :disabled="!newMessage.trim() || sending"
         >
           <span v-if="!sending">Send</span>
@@ -192,7 +192,7 @@ watch(() => props.courseId, () => {
 }
 
 .message-own .message-content {
-  @apply bg-primary-100 border border-primary-200;
+  @apply bg-ash/30 border border-ash;
 }
 
 .message-other {
@@ -200,6 +200,6 @@ watch(() => props.courseId, () => {
 }
 
 .avatar {
-  @apply w-8 h-8 rounded-full bg-primary-500 text-white flex items-center justify-center text-xs font-semibold;
+  @apply w-8 h-8 rounded-full bg-teal text-white flex items-center justify-center text-xs font-semibold;
 }
 </style>

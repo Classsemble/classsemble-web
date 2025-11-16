@@ -1,14 +1,14 @@
 <template>
-  <div class="chat-page min-h-screen bg-gray-50 p-6">
+  <div class="chat-page min-h-screen bg-linen p-6">
     <div class="max-w-6xl mx-auto">
       <!-- Header -->
       <div class="mb-6">
-        <h1 class="text-3xl font-bold text-gray-900 mb-2">Course Chat</h1>
-        <p class="text-gray-600">Connect with your classmates in real-time</p>
+        <h1 class="text-3xl font-bold text-teal mb-2">Course Chat</h1>
+        <p class="text-ash">Connect with your classmates in real-time</p>
       </div>
 
       <!-- Chat Container -->
-      <div class="bg-white rounded-lg shadow" style="height: calc(100vh - 200px);">
+      <div class="bg-lemon rounded-lg shadow-lg" style="height: calc(100vh - 200px);">
         <ChatBox
           v-if="courseId && currentUserId"
           :course-id="courseId"
@@ -17,13 +17,14 @@
           :online-count="onlineCount"
           @messageSent="handleMessageSent"
         />
-        <div v-else class="flex items-center justify-center h-full text-gray-500">
+        <div v-else class="flex items-center justify-center h-full text-teal">
           Loading chat...
         </div>
       </div>
     </div>
   </div>
 </template>
+
 
 <script setup lang="ts">
 const courseId = ref('')
