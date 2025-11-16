@@ -3,10 +3,10 @@
     <Navbar />
 
     <!-- Hero -->
-    <section class="bg-gradient-to-br from-primary-50 to-white py-20 px-4">
+    <section class="bg-linen py-20 px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-5xl font-bold text-gray-900 mb-6">Powerful Features for Modern Education</h1>
-        <p class="text-xl text-gray-600">
+        <h1 class="text-5xl font-bold text-teal mb-6">Powerful Features for Modern Education</h1>
+        <p class="text-xl text-ash">
           Everything you need to enhance collaboration and engagement in your Canvas courses
         </p>
       </div>
@@ -29,9 +29,9 @@
     </section>
 
     <!-- Integration Section -->
-    <section class="py-20 bg-gray-50 px-4">
+    <section class="py-20 bg-lemon px-4">
       <div class="max-w-7xl mx-auto">
-        <h2 class="section-heading text-center mb-16">Seamless Integrations</h2>
+        <h2 class="section-heading text-center mb-16 text-teal">Seamless Integrations</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
           <div class="text-center">
             <div class="bg-white rounded-lg p-6 shadow-md">

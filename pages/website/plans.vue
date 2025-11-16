@@ -3,10 +3,10 @@
     <Navbar />
 
     <!-- Hero -->
-    <section class="bg-gradient-to-br from-primary-50 to-white py-20 px-4">
+    <section class="bg-linen py-20 px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-5xl font-bold text-gray-900 mb-6">Simple, Transparent Pricing</h1>
-        <p class="text-xl text-gray-600">
+        <h1 class="text-5xl font-bold text-teal mb-6">Simple, Transparent Pricing</h1>
+        <p class="text-xl text-ash">
           Choose the plan that's right for your institution. All plans include LTI 1.3 integration.
         </p>
       </div>
@@ -34,13 +34,13 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-20 bg-gray-50 px-4">
+    <section class="py-20 bg-lemon px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="section-heading text-center mb-12">Frequently Asked Questions</h2>
+        <h2 class="section-heading text-center mb-12 text-teal">Frequently Asked Questions</h2>
         <div class="space-y-6">
           <div v-for="(faq, index) in faqs" :key="index" class="card">
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">{{ faq.question }}</h3>
-            <p class="text-gray-600">{{ faq.answer }}</p>
+            <h3 class="text-lg font-semibold text-teal mb-2">{{ faq.question }}</h3>
+            <p class="text-ash">{{ faq.answer }}</p>
           </div>
         </div>
       </div>

@@ -9,22 +9,22 @@
       </div>
     </div>
     
-    <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
+    <h3 class="text-xl font-bold text-teal mb-2 group-hover:text-coral transition-colors">
       {{ title }}
     </h3>
     
-    <p class="text-gray-600 leading-relaxed">
+    <p class="text-ash leading-relaxed">
       {{ description }}
     </p>
 
-    <div v-if="features" class="mt-4 pt-4 border-t border-gray-200">
+    <div v-if="features" class="mt-4 pt-4 border-t border-ash">
       <ul class="space-y-2">
         <li
           v-for="(feature, index) in features"
           :key="index"
-          class="flex items-start gap-2 text-sm text-gray-600"
+          class="flex items-start gap-2 text-sm text-ash"
         >
-          <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
           </svg>
           <span>{{ feature }}</span>
@@ -45,8 +45,8 @@ interface Props {
 }
 
 withDefaults(defineProps<Props>(), {
-  iconBgClass: 'bg-primary-100 group-hover:bg-primary-200',
-  iconColorClass: 'text-primary-600',
+  iconBgClass: 'bg-lemon group-hover:bg-ash/20',
+  iconColorClass: 'text-teal',
   features: () => []
 })
 </script>
