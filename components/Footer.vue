@@ -58,6 +58,28 @@
           </ul>
         </div>
 
+        <!-- Resources -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Resources</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="https://classsemble.github.io/classsemble-lti/" target="_blank" class="hover:text-teal transition-colors">Documentation</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-teal transition-colors">API Reference</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-teal transition-colors">Community Forum</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-teal transition-colors">Support Center</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-teal transition-colors">Status Page</a>
+            </li>
+          </ul>
+        </div>
+
         <!-- Legal -->
         <div>
           <h3 class="text-white font-semibold mb-4">Legal</h3>
@@ -72,9 +94,42 @@
               <a href="#" class="hover:text-teal transition-colors">Cookie Policy</a>
             </li>
             <li>
-              <a href="#" class="hover:text-teal transition-colors">Acceptable Use</a>
+              <a href="#" class="hover:text-teal transition-colors">GDPR Compliance</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-teal transition-colors">FERPA Compliance</a>
             </li>
           </ul>
+        </div>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="border-t border-gray-800 mt-8 pt-8">
+        <div class="flex flex-wrap items-center justify-center gap-8 mb-6">
+          <div class="flex items-center gap-2 text-sm">
+            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-gray-400">SSL Secured</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-gray-400">GDPR Compliant</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-gray-400">FERPA Compliant</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-gray-400">99.9% Uptime SLA</span>
+          </div>
         </div>
       </div>
 

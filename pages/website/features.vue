@@ -2,57 +2,659 @@
   <div class="features-page">
     <Navbar />
 
-    <!-- Hero -->
-    <section class="bg-linen py-20 px-4">
-      <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-5xl font-bold text-teal mb-6">Powerful Features for Modern Education</h1>
-        <p class="text-xl text-ash">
-          Everything you need to enhance collaboration and engagement in your Canvas courses
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-teal to-teal/80 text-white py-20 px-4">
+      <div class="max-w-7xl mx-auto text-center">
+        <Badge variant="lemon" size="lg" class="mb-4">FEATURES</Badge>
+        <h1 class="text-5xl md:text-6xl font-bold font-display mb-6">
+          Everything You Need for<br/>Seamless Collaboration
+        </h1>
+        <p class="text-xl opacity-90 max-w-3xl mx-auto">
+          Discover how Classsemble brings scheduling, communication, and analytics together in one powerful platform
         </p>
       </div>
     </section>
 
-    <!-- Main Features -->
-    <section class="py-20 px-4">
+    <!-- For Students Section -->
+    <section class="py-20 px-4 bg-white">
       <div class="max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <FeatureCard
-            v-for="feature in features"
-            :key="feature.title"
-            :title="feature.title"
-            :description="feature.description"
-            :icon="feature.icon"
-            :features="feature.items"
-          />
+        <div class="text-center mb-16">
+          <Badge variant="coral" size="lg" class="mb-4">FOR STUDENTS</Badge>
+          <h2 class="text-4xl font-bold font-display text-gray-900 mb-4">
+            Collaborate More, Stress Less
+          </h2>
+          <p class="text-xl text-gray-600">Tools designed to help students connect, organize, and succeed</p>
+        </div>
+
+        <!-- Meeting Scheduler -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 items-center">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 mr-3 text-teal">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 class="text-3xl font-bold font-display text-teal">Meeting Scheduler</h3>
+            </div>
+            <p class="text-lg text-gray-700 mb-6">
+              Create and join study groups, office hours, and collaborative sessions with ease
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Visual calendar with all course meetings</strong>
+                  <p class="text-gray-600 text-sm">See all your scheduled meetings at a glance</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">One-click meeting creation</strong>
+                  <p class="text-gray-600 text-sm">Set up study groups in seconds</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">RSVP and attendee tracking</strong>
+                  <p class="text-gray-600 text-sm">See who's attending and manage capacity</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Automatic reminders via email</strong>
+                  <p class="text-gray-600 text-sm">Never miss a meeting with timely notifications</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Sync to Google Calendar</strong>
+                  <p class="text-gray-600 text-sm">Keep your personal calendar up to date automatically</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Generate Zoom links automatically</strong>
+                  <p class="text-gray-600 text-sm">Virtual meetings made simple</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-gray-100 rounded-xl p-8 flex items-center justify-center">
+            <img src="https://placehold.co/600x400/5CA4A9/ffffff?text=Calendar+View" alt="Calendar View" class="rounded-lg shadow-lg w-full" />
+          </div>
+        </div>
+
+        <!-- Real-Time Chat -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 items-center">
+          <div class="order-2 lg:order-1 bg-gray-100 rounded-xl p-8 flex items-center justify-center">
+            <img src="https://placehold.co/600x400/5CA4A9/ffffff?text=Chat+Interface" alt="Chat Interface" class="rounded-lg shadow-lg w-full" />
+          </div>
+          <div class="order-1 lg:order-2">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 mr-3 text-teal">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+              </div>
+              <h3 class="text-3xl font-bold font-display text-teal">Real-Time Chat</h3>
+            </div>
+            <p class="text-lg text-gray-700 mb-6">
+              Communicate instantly with classmates and instructors through dedicated course chat rooms
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Course-based chat rooms</strong>
+                  <p class="text-gray-600 text-sm">Organized conversations by course</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Real-time message delivery</strong>
+                  <p class="text-gray-600 text-sm">Powered by Socket.IO for instant communication</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Typing indicators</strong>
+                  <p class="text-gray-600 text-sm">See when someone is composing a message</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Online/offline presence</strong>
+                  <p class="text-gray-600 text-sm">Know who's available right now</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Complete message history</strong>
+                  <p class="text-gray-600 text-sm">Never lose important conversations</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Personal Dashboard -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 mr-3 text-teal">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 class="text-3xl font-bold font-display text-teal">Personal Dashboard</h3>
+            </div>
+            <p class="text-lg text-gray-700 mb-6">
+              Track your participation and activity across all your courses
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Meetings attended</strong>
+                  <p class="text-gray-600 text-sm">View your participation history</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Messages sent</strong>
+                  <p class="text-gray-600 text-sm">Track your engagement level</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Personal analytics</strong>
+                  <p class="text-gray-600 text-sm">Visualize your activity trends</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-gray-100 rounded-xl p-8 flex items-center justify-center">
+            <img src="https://placehold.co/600x400/5CA4A9/ffffff?text=Student+Dashboard" alt="Student Dashboard" class="rounded-lg shadow-lg w-full" />
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Integration Section -->
-    <section class="py-20 bg-lemon px-4">
+    <!-- For Instructors Section -->
+    <section class="py-20 px-4 bg-gray-50">
       <div class="max-w-7xl mx-auto">
-        <h2 class="section-heading text-center mb-16 text-teal">Seamless Integrations</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-          <div class="text-center">
-            <div class="bg-white rounded-lg p-6 shadow-md">
-              <p class="font-semibold text-gray-900">Canvas LMS</p>
+        <div class="text-center mb-16">
+          <Badge variant="teal" size="lg" class="mb-4">FOR INSTRUCTORS</Badge>
+          <h2 class="text-4xl font-bold font-display text-gray-900 mb-4">
+            Measure Engagement, Drive Success
+          </h2>
+          <p class="text-xl text-gray-600">Powerful tools to understand and support your students</p>
+        </div>
+
+        <!-- Engagement Analytics -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 items-center">
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 mr-3 text-coral">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 class="text-3xl font-bold font-display text-coral">Engagement Analytics</h3>
             </div>
+            <p class="text-lg text-gray-700 mb-6">
+              Measure student participation and course activity with detailed insights
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Meeting creation and attendance rates</strong>
+                  <p class="text-gray-600 text-sm">Track participation trends over time</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Chat engagement metrics</strong>
+                  <p class="text-gray-600 text-sm">Measure student interaction levels</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Active user tracking</strong>
+                  <p class="text-gray-600 text-sm">Identify at-risk students early</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Activity timeline graphs</strong>
+                  <p class="text-gray-600 text-sm">Visualize engagement patterns</p>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="text-center">
-            <div class="bg-white rounded-lg p-6 shadow-md">
-              <p class="font-semibold text-gray-900">Google Calendar</p>
+          <div class="bg-gray-100 rounded-xl p-8 flex items-center justify-center">
+            <img src="https://placehold.co/600x400/ED6A5A/ffffff?text=Analytics+Dashboard" alt="Analytics Dashboard" class="rounded-lg shadow-lg w-full" />
+          </div>
+        </div>
+
+        <!-- Office Hours Management -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1 bg-gray-100 rounded-xl p-8 flex items-center justify-center">
+            <img src="https://placehold.co/600x400/ED6A5A/ffffff?text=Office+Hours" alt="Office Hours" class="rounded-lg shadow-lg w-full" />
+          </div>
+          <div class="order-1 lg:order-2">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 mr-3 text-coral">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="text-3xl font-bold font-display text-coral">Office Hours Management</h3>
             </div>
+            <p class="text-lg text-gray-700 mb-6">
+              Schedule and organize virtual or in-person office hours efficiently
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Recurring meeting support</strong>
+                  <p class="text-gray-600 text-sm">Set weekly office hours once</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Capacity limits</strong>
+                  <p class="text-gray-600 text-sm">Manage attendance for group sessions</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <strong class="text-gray-900">Automated reminders</strong>
+                  <p class="text-gray-600 text-sm">Reduce no-shows with timely notifications</p>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="text-center">
-            <div class="bg-white rounded-lg p-6 shadow-md">
-              <p class="font-semibold text-gray-900">Zoom</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section class="py-20 px-4 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <Badge variant="coral" size="lg" class="mb-4">INTEGRATIONS</Badge>
+          <h2 class="text-4xl font-bold font-display text-gray-900 mb-4">
+            Works With Your Favorite Tools
+          </h2>
+          <p class="text-xl text-gray-600">Seamlessly connect with the platforms you already use</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-teal hover:shadow-lg transition-all">
+            <div class="w-16 h-16 mb-4 text-teal">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
             </div>
+            <h3 class="text-2xl font-bold font-display text-gray-900 mb-3">Google Calendar</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li>✓ OAuth2 authentication</li>
+              <li>✓ Automatic event sync</li>
+              <li>✓ Two-way updates</li>
+              <li>✓ Multiple calendar support</li>
+            </ul>
           </div>
-          <div class="text-center">
-            <div class="bg-white rounded-lg p-6 shadow-md">
-              <p class="font-semibold text-gray-900">More Coming</p>
+          <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-teal hover:shadow-lg transition-all">
+            <div class="w-16 h-16 mb-4 text-teal">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
             </div>
+            <h3 class="text-2xl font-bold font-display text-gray-900 mb-3">Zoom</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li>✓ One-click meeting generation</li>
+              <li>✓ Auto-populated details</li>
+              <li>✓ Secure OAuth connection</li>
+              <li>✓ Instant join links</li>
+            </ul>
           </div>
+          <div class="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-teal hover:shadow-lg transition-all">
+            <div class="w-16 h-16 mb-4 text-teal">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold font-display text-gray-900 mb-3">Email Notifications</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li>✓ Powered by Resend API</li>
+              <li>✓ Customizable templates</li>
+              <li>✓ Scheduled reminders</li>
+              <li>✓ SMTP fallback support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Comparison Table -->
+    <section class="py-20 px-4 bg-gray-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold font-display text-gray-900 mb-4">
+            Compare Plans and Features
+          </h2>
+          <p class="text-xl text-gray-600">Choose the right plan for your needs</p>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full bg-white rounded-xl shadow-lg overflow-hidden">
+            <thead class="bg-teal text-white">
+              <tr>
+                <th class="px-6 py-4 text-left font-bold">Feature</th>
+                <th class="px-6 py-4 text-center font-bold">Free</th>
+                <th class="px-6 py-4 text-center font-bold">Pro</th>
+                <th class="px-6 py-4 text-center font-bold">Enterprise</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr>
+                <td class="px-6 py-4 font-medium">LTI 1.3 Integration</td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-6 py-4 font-medium">Meeting Scheduler</td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 font-medium">Real-Time Chat</td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-6 py-4 font-medium">Google Calendar Sync</td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 font-medium">Zoom Integration</td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-6 py-4 font-medium">Email Notifications</td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 font-medium">Basic Analytics</td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-6 py-4 font-medium">Advanced Analytics</td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-gray-400 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 font-medium">Priority Support</td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-gray-400 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-6 py-4 font-medium">Custom Branding</td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-gray-400 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-gray-400 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 font-medium">Dedicated Support</td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-gray-400 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-gray-400 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-6 py-4 font-medium">SLA Guarantee</td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-gray-400 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-gray-400 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-green-500 inline" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="text-center mt-12">
+          <Button variant="primary" size="lg" to="/website/plans">View Detailed Pricing →</Button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 bg-gradient-to-r from-coral to-coral/90 text-white">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold font-display mb-6">Ready to Experience the Difference?</h2>
+        <p class="text-xl mb-8 opacity-90">
+          Start your free trial today and see how Classsemble transforms collaboration
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="secondary" size="lg" href="#signup">Start Free Trial</Button>
+          <Button variant="outline" size="lg" to="/website/contact" class="!text-white !border-white hover:!bg-white hover:!text-coral">Schedule Demo</Button>
         </div>
       </div>
     </section>
@@ -62,42 +664,10 @@
 </template>
 
 <script setup lang="ts">
-const features = [
-  {
-    title: 'Meeting Scheduler',
-    description: 'Coordinate group meetings with ease using our interactive calendar interface',
-    icon: `<svg fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z'/></svg>`,
-    items: ['Visual calendar view', 'Timezone support', 'Email reminders', 'Recurring meetings']
-  },
-  {
-    title: 'Real-Time Chat',
-    description: 'Course-specific chat rooms for instant communication and collaboration',
-    icon: `<svg fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z'/></svg>`,
-    items: ['Instant messaging', 'Message history', 'File sharing', 'Online status']
-  },
-  {
-    title: 'Video Conferencing',
-    description: 'Integrated Zoom meetings launched directly from Canvas',
-    icon: `<svg fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z'/></svg>`,
-    items: ['One-click Zoom links', 'Auto-generate meetings', 'Join from Canvas', 'Recording access']
-  },
-  {
-    title: 'Attendance Tracking',
-    description: 'Automatically track participation and engagement',
-    icon: `<svg fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4'/></svg>`,
-    items: ['Meeting attendance', 'Chat participation', 'Export reports', 'Grade sync']
-  },
-  {
-    title: 'Analytics Dashboard',
-    description: 'Insights into student engagement and participation patterns',
-    icon: `<svg fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z'/></svg>`,
-    items: ['Engagement metrics', 'Usage statistics', 'Student insights', 'Custom reports']
-  },
-  {
-    title: 'Mobile Friendly',
-    description: 'Access from any device with responsive design',
-    icon: `<svg fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z'/></svg>`,
-    items: ['Responsive design', 'Touch optimized', 'Works offline', 'Native feel']
-  }
-]
+useSeoMeta({
+  title: 'Features - Classsemble',
+  description: 'Discover all the powerful features of Classsemble: meeting scheduling, real-time chat, Google Calendar sync, Zoom integration, and analytics for Canvas LMS.',
+  ogTitle: 'Features - Classsemble',
+  ogDescription: 'Discover all the powerful features of Classsemble: meeting scheduling, real-time chat, Google Calendar sync, Zoom integration, and analytics for Canvas LMS.',
+})
 </script>
