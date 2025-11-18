@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <!-- Calendar -->
+  <rect x="170" y="80" width="330" height="290" rx="30" stroke="#5CA4A9" stroke-width="20" fill="#E6EBE0"/>
+  
+  <!-- Calendar binding rings -->
+  <circle cx="250" cy="80" r="20" fill="#5CA4A9"/>
+  <circle cx="420" cy="80" r="20" fill="#5CA4A9"/>
+  
+  <!-- Calendar header line -->
+  <line x1="170" y1="140" x2="500" y2="140" stroke="#5CA4A9" stroke-width="4"/>
+  
+  <!-- Calendar grid squares (4 squares in teal) -->
+  <rect x="220" y="190" width="50" height="50" rx="8" fill="#5CA4A9"/>
+  <rect x="300" y="190" width="50" height="50" rx="8" fill="#5CA4A9"/>
+  <rect x="220" y="270" width="50" height="50" rx="8" fill="#5CA4A9"/>
+  <rect x="300" y="270" width="50" height="50" rx="8" fill="#5CA4A9"/>
+  
+  <!-- Chat bubble -->
+  <rect x="365" y="190" width="190" height="140" rx="25" fill="#F4F1BB" stroke="#5CA4A9" stroke-width="16"/>
+  
+  <!-- Chat bubble tail -->
+  <path d="M 400 330 L 380 370 L 420 330 Z" fill="#5CA4A9"/>
+  
+  <!-- Chat lines inside bubble -->
+  <line x1="410" y1="240" x2="520" y2="240" stroke="#5CA4A9" stroke-width="12" stroke-linecap="round"/>
+  <line x1="410" y1="280" x2="490" y2="280" stroke="#5CA4A9" stroke-width="12" stroke-linecap="round"/>
+</svg>

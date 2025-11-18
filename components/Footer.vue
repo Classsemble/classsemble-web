@@ -62,21 +62,10 @@
         <div>
           <h3 class="text-white font-semibold mb-4">Resources</h3>
           <ul class="space-y-2">
-            <li>
-              <a href="https://classsemble.github.io/classsemble-lti/" target="_blank" class="hover:text-teal transition-colors">Documentation</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-teal transition-colors">API Reference</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-teal transition-colors">Community Forum</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-teal transition-colors">Support Center</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-teal transition-colors">Status Page</a>
-            </li>
+            <li><NuxtLink to="/website/docs" class="hover:text-teal transition-colors">Documentation</NuxtLink></li>
+            <li><NuxtLink to="/website/docs#api-reference" class="hover:text-teal transition-colors">API Reference</NuxtLink></li>
+            <li><NuxtLink to="/website/support" class="hover:text-teal transition-colors">Support Center</NuxtLink></li>
+            <li><NuxtLink to="/website/status" class="hover:text-teal transition-colors">Status Page</NuxtLink></li>
           </ul>
         </div>
 
@@ -85,19 +74,19 @@
           <h3 class="text-white font-semibold mb-4">Legal</h3>
           <ul class="space-y-2">
             <li>
-              <a href="#" class="hover:text-teal transition-colors">Privacy Policy</a>
+              <NuxtLink to="/website/legal/privacy" class="hover:text-teal transition-colors">Privacy Policy</NuxtLink>
             </li>
             <li>
-              <a href="#" class="hover:text-teal transition-colors">Terms of Service</a>
+              <NuxtLink to="/website/legal/terms" class="hover:text-teal transition-colors">Terms of Service</NuxtLink>
             </li>
             <li>
-              <a href="#" class="hover:text-teal transition-colors">Cookie Policy</a>
+              <NuxtLink to="/website/legal/cookies" class="hover:text-teal transition-colors">Cookie Policy</NuxtLink>
             </li>
             <li>
-              <a href="#" class="hover:text-teal transition-colors">GDPR Compliance</a>
+              <NuxtLink to="/website/legal/gdpr" class="hover:text-teal transition-colors">GDPR Compliance</NuxtLink>
             </li>
             <li>
-              <a href="#" class="hover:text-teal transition-colors">FERPA Compliance</a>
+              <NuxtLink to="/website/legal/ferpa" class="hover:text-teal transition-colors">FERPA Compliance</NuxtLink>
             </li>
           </ul>
         </div>

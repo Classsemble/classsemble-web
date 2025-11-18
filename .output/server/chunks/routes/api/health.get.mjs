@@ -1,0 +1,29 @@
+import { d as defineEventHandler } from '../../nitro/nitro.mjs';
+import 'node:http';
+import 'node:https';
+import 'node:crypto';
+import 'stream';
+import 'events';
+import 'http';
+import 'crypto';
+import 'buffer';
+import 'zlib';
+import 'https';
+import 'net';
+import 'tls';
+import 'url';
+import 'node:events';
+import 'node:buffer';
+import 'node:fs';
+import 'node:path';
+import 'node:url';
+
+const health_get = defineEventHandler(() => {
+  return {
+    status: "ok",
+    timestamp: (/* @__PURE__ */ new Date()).toISOString()
+  };
+});
+
+export { health_get as default };
+//# sourceMappingURL=health.get.mjs.map
