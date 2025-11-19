@@ -397,94 +397,94 @@ const _routes = [
   {
     name: "chat",
     path: "/chat",
-    component: () => import('./chat-CihMwv5p.mjs')
+    component: () => import('./chat-O1nFms4B.mjs')
   },
   {
     name: "index",
     path: "/",
     meta: { "middleware": "auth" },
-    component: () => import('./index-CeFVJy1n.mjs')
+    component: () => import('./index-BbM6yXO6.mjs')
   },
   {
     name: "schedule",
     path: "/schedule",
     meta: { "middleware": "auth" },
-    component: () => import('./schedule-BNfxvs9b.mjs')
+    component: () => import('./schedule-DGdM_pbO.mjs')
   },
   {
     name: "meeting-id",
     path: "/meeting/:id()",
-    component: () => import('./_id_-vu_8CuOv.mjs')
+    component: () => import('./_id_-BClufXdT.mjs')
   },
   {
     name: "website-docs",
     path: "/website/docs",
-    component: () => import('./docs-DE3g5skp.mjs')
+    component: () => import('./docs-BxN1zZpO.mjs')
   },
   {
     name: "website-about",
     path: "/website/about",
-    component: () => import('./about-BgfhEK2P.mjs')
+    component: () => import('./about-CPEZ_2TN.mjs')
   },
   {
     name: "website",
     path: "/website",
-    component: () => import('./index-DaFsiiws.mjs')
+    component: () => import('./index-p8hzSRtm.mjs')
   },
   {
     name: "website-plans",
     path: "/website/plans",
-    component: () => import('./plans-BOkeX53d.mjs')
+    component: () => import('./plans-LraZ4qqI.mjs')
   },
   {
     name: "website-status",
     path: "/website/status",
-    component: () => import('./status-DK4jZIhc.mjs')
+    component: () => import('./status-B8RsfFzo.mjs')
   },
   {
     name: "website-contact",
     path: "/website/contact",
-    component: () => import('./contact-C7GeLbm5.mjs')
+    component: () => import('./contact-D1W_vr_-.mjs')
   },
   {
     name: "website-support",
     path: "/website/support",
-    component: () => import('./support-D_QymbKw.mjs')
+    component: () => import('./support-OYh9tMGN.mjs')
   },
   {
     name: "website-features",
     path: "/website/features",
-    component: () => import('./features-Cpg3W51j.mjs')
+    component: () => import('./features-ClXCASzX.mjs')
   },
   {
     name: "website-legal-gdpr",
     path: "/website/legal/gdpr",
-    component: () => import('./gdpr-D_t2MZ98.mjs')
+    component: () => import('./gdpr-DC9Vubmu.mjs')
   },
   {
     name: "website-legal-ferpa",
     path: "/website/legal/ferpa",
-    component: () => import('./ferpa--mzD0Ult.mjs')
+    component: () => import('./ferpa-JDEYrG7g.mjs')
   },
   {
     name: "website-legal",
     path: "/website/legal",
-    component: () => import('./index-CZljwMlI.mjs')
+    component: () => import('./index-CwXH4weB.mjs')
   },
   {
     name: "website-legal-terms",
     path: "/website/legal/terms",
-    component: () => import('./terms-DqPZquco.mjs')
+    component: () => import('./terms-DomZH666.mjs')
   },
   {
     name: "website-legal-cookies",
     path: "/website/legal/cookies",
-    component: () => import('./cookies-dmTkkXxQ.mjs')
+    component: () => import('./cookies-B4OX5-fq.mjs')
   },
   {
     name: "website-legal-privacy",
     path: "/website/legal/privacy",
-    component: () => import('./privacy-DHXl7STj.mjs')
+    component: () => import('./privacy-Cwpg46xp.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -605,7 +605,7 @@ const globalMiddleware = [
   manifest_45route_45rule
 ];
 const namedMiddleware = {
-  auth: () => import('./auth-CqFzICnc.mjs')
+  auth: () => import('./auth-DYcfclSG.mjs')
 };
 const plugin = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:router",
@@ -1106,8 +1106,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-CP_vw9Js.mjs'));
-    const _Error = defineAsyncComponent(() => import('./error-500-knj6K_ll.mjs'));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-BUbok0Kc.mjs'));
+    const _Error = defineAsyncComponent(() => import('./error-500-r1p8wem9.mjs'));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
