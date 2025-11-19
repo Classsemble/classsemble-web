@@ -71,6 +71,10 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  middleware: 'auth'
+})
+
 const meetings = ref<any[]>([])
 const showCreateForm = ref(false)
 const selectedMeeting = ref<any>(null)

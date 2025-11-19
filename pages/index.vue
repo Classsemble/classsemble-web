@@ -128,6 +128,10 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  middleware: 'auth'
+})
+
 const user = ref<any>(null)
 const upcomingMeetings = ref<any[]>([])
 const recentMessages = ref<any[]>([])
