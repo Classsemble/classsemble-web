@@ -7,14 +7,15 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   
   app: {
+    baseURL: '/classsemble-web/',
     head: {
-      title: 'Classsemble - Collaborate, Schedule, and Connect Inside Canvas',
+      title: 'Classsemble - Modern Education Platform',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { 
           name: 'description', 
-          content: 'Classsemble integrates with Canvas LMS to provide student collaboration, meeting scheduling, and real-time chat.' 
+          content: 'Transform your classroom with Classsemble. The all-in-one platform for modern education.' 
         },
         { name: 'format-detection', content: 'telephone=no' }
       ],
@@ -24,36 +25,10 @@ export default defineNuxtConfig({
     }
   },
 
-  runtimeConfig: {
-    // Private keys - only available server-side
-    databaseUrl: process.env.DATABASE_URL,
-    ltiKeysetUrl: process.env.LTI_KEYSET_URL,
-    ltiClientId: process.env.LTI_CLIENT_ID,
-    ltiDeploymentId: process.env.LTI_DEPLOYMENT_ID,
-    ltiPrivateKey: process.env.LTI_PRIVATE_KEY,
-    googleClientId: process.env.GOOGLE_CLIENT_ID,
-    googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    zoomApiKey: process.env.ZOOM_API_KEY,
-    zoomApiSecret: process.env.ZOOM_API_SECRET,
-    jwtSecret: process.env.JWT_SECRET,
-    socketPort: process.env.SOCKET_PORT || '3001',
-    
-    // Public keys - exposed to client
-    public: {
-      apiBase: process.env.API_BASE || '/api'
-    }
-  },
-
+  ssr: false,
+  
   nitro: {
-    preset: 'node-server',
-    experimental: {
-      websocket: true
-    }
-  },
-
-  typescript: {
-    strict: true,
-    typeCheck: false
+    preset: 'static'
   },
 
   compatibilityDate: '2024-11-13'
