@@ -1,5 +1,0 @@
-# Use Prisma Migrate to create database tables
-npx prisma migrate dev --name init
-
-# Or deploy migrations in production
-npx prisma migrate deploy
